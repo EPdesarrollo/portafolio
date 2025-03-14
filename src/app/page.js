@@ -1,95 +1,86 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "@/styles/page.module.css";
+import { firaCode } from "@/fonts/fonts";
+// components
+import ProfesionalProject from "@/components/PorfesionalProject/ProfesionalProject";
+import PersonalProject from "@/components/PersonalProject/PersonalProject";
+import Contact from "@/components/Contact/Contact";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <main className={styles.main}>
+      {/* header */}
+      <section className={styles.headerSection}>
+        <div className={styles.headerSectionBox}>
+          <h2>ERIC PAPELL</h2>
+          <h1>SOFTWARE DEVELOPER</h1>
+          <p className={firaCode.className}>
+            ¡Hola! Soy Eric Papell y soy un apasionado por la programación en
+            constante aprendizaje. A medida que más aprendo más me gusta.
+          </p>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className={`${styles.skillsBox} ${firaCode.className}`}>
+          <div className={styles.skillsBoxIndividual}>
+            <img src="/logoJs.png" />
+            <div>
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <div className={styles.skillsBoxIndividual}>
+            <img src="/logoCSS.png" />
+            <div>
+              <p>CSS</p>
+            </div>
+          </div>
+          <div className={styles.skillsBoxIndividual}>
+            <img src="/logoHTML.png" />
+            <div>
+              <p>HTML</p>
+            </div>
+          </div>
+          <div className={styles.skillsBoxIndividual}>
+            <img src="/logoREACT.png" />
+            <div>
+              <p>REACT</p>
+            </div>
+          </div>
+          <div className={styles.skillsBoxIndividual}>
+            <img src="/logoNODE.png" />
+            <div>
+              <p>NODE</p>
+            </div>
+          </div>
+          <div className={styles.skillsBoxIndividual}>
+            <img src="/logoGIT.png" />
+            <div>
+              <p>GIT</p>
+            </div>
+          </div>
+          <div className={styles.skillsBoxIndividual}>
+            <img src="/logoDB.png" />
+            <div>
+              <p>SQL & NOSQL</p>
+            </div>
+          </div>
+          <div className={styles.skillsBoxIndividual}>
+            <img src="/logoWP.png" />
+            <div>
+              <p>WORDPRESS</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* header */}
+      {/* profesional project */}
+      <ProfesionalProject />
+      {/* profesional project */}
+
+      {/* personal project */}
+      <PersonalProject />
+      {/* personal project */}
+
+      {/* contact */}
+      <Contact />
+      {/* contact */}
+    </main>
   );
 }

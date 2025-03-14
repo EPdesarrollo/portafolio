@@ -1,0 +1,25 @@
+.navbarMain {
+  width: 100vw;
+  background: var(--bg-Color);
+  /* background: rgb(197, 146, 146); */
+  padding: 1.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.navbarBoxLayout {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-Width);
+  display: flex;
+  column-gap: 2rem;
+  justify-content: right;
+}
+.navbarBoxLayout a {
+  color: rgb(222, 222, 222);
+  font-size: 1.2rem;
+}
+.navbarBoxLayout span {
+  color: var(--yellow-Color);
+  font-size: 1.2rem;
+}

@@ -1,0 +1,48 @@
+.main {
+}
+.headerSection {
+  width: 100vw;
+  padding-top: 30vh;
+  padding-bottom: 5rem;
+}
+.headerSectionBox {
+  width: 90vw;
+  max-width: var(--max-Width);
+  margin: 0 auto;
+  text-align: center;
+}
+.headerSectionBox h2 {
+}
+.headerSectionBox h1 {
+  color: var(--yellow-Color);
+  font-size: 4rem;
+}
+.headerSectionBox p {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  max-width: 1000px;
+}
+
+/* skills */
+.skillsBox {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  column-gap: 2rem;
+}
+.skillsBoxIndividual {
+  text-align: center;
+}
+.skillsBoxIndividual img {
+  width: 40px;
+}
+.skillsBoxIndividual p {
+  padding: 0.2rem 0rem;
+  width: 80px;
+  margin-top: 0.25rem;
+  font-size: 0.7rem;
+  background: var(--boxColor);
+  border-radius: 5px;
+}

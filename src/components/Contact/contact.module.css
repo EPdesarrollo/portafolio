@@ -10,9 +10,12 @@
   max-width: var(--max-Width);
   margin: 0 auto;
   margin-top: 3rem;
-  background: var(--boxColor);
+  /* background: var(--boxColor); */
   padding: 2rem;
   border-radius: 20px;
+  border: 1px solid var(--boxColor);
+  /* border-radius: 5px; */
+  box-shadow: 1px 1px 5px var(--boxColor);
 }
 .inputLayout {
   display: flex;
@@ -28,17 +31,48 @@
 .inputBox label,
 .textareaBox label {
   width: fit-content;
-  padding: 0.2rem 1.5rem;
+  padding: 0.15rem 1.25rem;
   color: white;
   background: var(--boxColor);
-  background: rgb(36, 51, 65);
-  font-size: 1rem;
+  /* background: rgb(36, 51, 65); */
+  font-size: 0.9rem;
   border-radius: 2px;
+  border: 1px solid var(--boxColor);
+  /* border-radius: 5px; */
+  box-shadow: 1px 1px 1px var(--boxColor);
+  transition: all 0.1s linear;
+  cursor: pointer;
 }
+
 .inputBox input,
-.textareaBox input {
+.textareaBox textarea {
   padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  background: rgb(237, 241, 247);
+  color: var(--bg-Color);
+  font-size: 1rem;
 }
 .textareaBox {
   margin-top: 2rem;
+}
+.form button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 0.2rem 1.5rem;
+  color: white;
+  background: var(--boxColor);
+  font-size: 1rem;
+  border-radius: 2px;
+  border: 1px solid var(--boxColor);
+  box-shadow: 1px 1px 1px var(--boxColor);
+  transition: all 0.1s linear;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+.inputBox label:hover,
+.textareaBox label:hover,
+.form button:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 0px 0px 0px var(--boxColor);
 }

@@ -2,7 +2,7 @@ import styles from "./contact.module.css";
 
 export function Contact() {
   return (
-    <section className={styles.contactSection}>
+    <section id="contact" className={styles.contactSection}>
       <h2>Any questions? Contact me!</h2>
       <form className={styles.form}>
         <div className={styles.inputLayout}>
@@ -35,6 +35,7 @@ export function Contact() {
             rows={10}
           />
         </div>
+        <button type="submit">Submit</button>
       </form>
     </section>
   );

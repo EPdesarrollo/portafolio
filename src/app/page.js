@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       {/* header */}
-      <section className={styles.headerSection}>
+      <section id="home" className={styles.headerSection}>
         <div className={styles.headerSectionBox}>
           <h2>ERIC PAPELL</h2>
           <h1>SOFTWARE DEVELOPER</h1>

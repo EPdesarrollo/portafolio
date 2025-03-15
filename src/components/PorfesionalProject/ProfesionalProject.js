@@ -2,7 +2,7 @@ import styles from "./profesionalProject.module.css";
 
 export function ProfesionalProject() {
   return (
-    <section className={styles.profesionalProjectSection}>
+    <section id="projects" className={styles.profesionalProjectSection}>
       <h2>Profesional Projects</h2>
       <div className={styles.profesionalProjectBox}>
         <div className={styles.profesionalProjectIndividual}>

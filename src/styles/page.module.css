@@ -39,11 +39,11 @@
   justify-content: center;
   align-items: baseline;
   column-gap: 2rem;
-  /* background: var(--boxColor); */
+  background: var(--boxColor);
   /* background: rgb(36, 51, 65); */
   border: 1px solid var(--boxColor);
   /* border-radius: 5px; */
-  box-shadow: 1px 1px 5px var(--boxColor);
+  box-shadow: 1px 1px 15px var(--boxColor);
 }
 .skillsBoxIndividual {
   text-align: center;

@@ -31,3 +31,8 @@ a {
 a:hover {
   transform: scale(1.05);
 }
+button {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}

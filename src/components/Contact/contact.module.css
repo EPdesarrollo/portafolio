@@ -1,7 +1,7 @@
 .contactSection {
-  background: var(--bgSecondary-Color);
-  padding: 8rem;
+  padding: 6rem 0rem 8rem 0rem;
   width: 100vw;
+  background: var(--bgSecondary-Color);
 }
 .contactSection h2 {
   text-align: center;
@@ -9,7 +9,7 @@
 .form {
   max-width: var(--max-Width);
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 3rem;
   background: var(--boxColor);
   padding: 2rem;
   border-radius: 20px;

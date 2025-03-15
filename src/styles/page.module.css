@@ -5,6 +5,8 @@
   padding-top: 30vh;
   padding-bottom: 8rem;
   min-height: 100vh;
+  background: no-repeat center url("/headerBg.png") var(--bg-Color);
+  background-size: 690px;
 }
 .headerSectionBox {
   width: 90vw;

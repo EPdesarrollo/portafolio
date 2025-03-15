@@ -2,18 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 :root {
   --yellow-Color: rgb(255, 215, 38);
   --bg-Color: rgb(42, 46, 54);
   --bgSecondary-Color: #37404c;
-  --boxColor: #6adcf34b;
+  --boxColor: #61c3d760;
   --max-Width: 1200px;
   --transition: all 0.2s linear;
 }
 body {
   position: relative;
   background: var(--bg-Color);
+  overflow-x: hidden;
 }
 h2,
 p {

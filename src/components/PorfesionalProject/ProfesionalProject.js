@@ -18,7 +18,7 @@ export function ProfesionalProject() {
           </div>
         </div>
         <div className={styles.profesionalProjectIndividual}>
-          <img src="petCode.webp" />
+          <img src="lebleu.webp" />
           <p className={styles.profesionalProjectIndividualText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
             libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi.
@@ -30,7 +30,7 @@ export function ProfesionalProject() {
           </div>
         </div>
         <div className={styles.profesionalProjectIndividual}>
-          <img src="petCode.webp" />
+          <img src="maxionline.webp" />
           <p className={styles.profesionalProjectIndividualText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
             libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi.
@@ -42,7 +42,7 @@ export function ProfesionalProject() {
           </div>
         </div>
         <div className={styles.profesionalProjectIndividual}>
-          <img src="petCode.webp" />
+          <img src="taquina.webp" />
           <p className={styles.profesionalProjectIndividualText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
             libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi.

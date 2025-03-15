@@ -58,7 +58,7 @@ export default function Home() {
           <div className={styles.skillsBoxIndividual}>
             <img src="/logoDB.png" />
             <div>
-              <p>SQL & NOSQL</p>
+              <p>SQL/NOSQL</p>
             </div>
           </div>
           <div className={styles.skillsBoxIndividual}>

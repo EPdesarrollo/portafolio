@@ -14,7 +14,7 @@
 }
 body {
   position: relative;
-  /* background: var(--bg-Color); */
+  background: var(--bg-Color);
   overflow-x: hidden;
 }
 h2,

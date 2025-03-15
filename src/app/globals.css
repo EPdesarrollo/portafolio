@@ -16,9 +16,15 @@ body {
   position: relative;
   /* background: var(--bg-Color); */
   overflow-x: hidden;
+<<<<<<< HEAD
   /* background: no-repeat center url("/headerBg.png") var(--bg-Color);
   background-size: 690px; */
   /* background-attachment: fixed; */
+=======
+  background: no-repeat center url("/headerBg.png") var(--bg-Color);
+  background-size: 690px;
+  background-attachment: fixed;
+>>>>>>> 091001793249dd484cad4f298a738a2024036c59
 }
 h2,
 p {

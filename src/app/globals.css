@@ -14,8 +14,11 @@
 }
 body {
   position: relative;
-  background: var(--bg-Color);
+  /* background: var(--bg-Color); */
   overflow-x: hidden;
+  background: no-repeat center url("/headerBg.png") var(--bg-Color);
+  background-size: 700px;
+  background-attachment: fixed;
 }
 h2,
 p {

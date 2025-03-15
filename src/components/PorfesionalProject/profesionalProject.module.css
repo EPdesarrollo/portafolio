@@ -2,10 +2,10 @@
   padding: 6rem 0rem 8rem 0rem;
   width: 100vw;
   background: var(--bgSecondary-Color);
-  border-top: 2px solid rgba(255, 0, 0, 0.7);
-  border-bottom: 2px solid rgba(255, 0, 0, 0.7);
-  box-shadow: 1px 1px 30px rgba(255, 0, 0, 0.7);
+
+  box-shadow: 1px 1px 40px var(--boxColor);
 }
+
 .profesionalProjectSection h2 {
   text-align: center;
 }
@@ -26,6 +26,7 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  box-shadow: 1px 1px 5px var(--boxColor);
 }
 .profesionalProjectIndividual img {
   width: 100%;

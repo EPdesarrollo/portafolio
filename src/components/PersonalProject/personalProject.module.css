@@ -44,6 +44,7 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  box-shadow: 1px 1px 5px var(--boxColor);
 }
 .profesionalProjectIndividual img,
 .profesionalProjectIndividualActive img {

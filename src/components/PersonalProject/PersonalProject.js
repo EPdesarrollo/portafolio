@@ -27,6 +27,30 @@ const data = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi. Fusce dignissim sem vel ultricies feugiat.",
     tecnologies: ["lorem", "ipsum"],
   },
+  {
+    id: 12,
+    image: "taquina.webp",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi. Fusce dignissim sem vel ultricies feugiat.",
+    tecnologies: ["lorem", "ipsum"],
+  },
+  {
+    id: 23,
+    image: "petcode.webp",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi. Fusce dignissim sem vel ultricies feugiat.",
+    tecnologies: ["lorem", "ipsum"],
+  },
+  {
+    id: 33,
+    image: "lebleu.webp",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi. Fusce dignissim sem vel ultricies feugiat.",
+    tecnologies: ["lorem", "ipsum"],
+  },
+  {
+    id: 43,
+    image: "taquina.webp",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi. Fusce dignissim sem vel ultricies feugiat.",
+    tecnologies: ["lorem", "ipsum"],
+  },
 ];
 
 export function PersonalProject() {

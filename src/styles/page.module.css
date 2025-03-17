@@ -2,11 +2,14 @@
 }
 .headerSection {
   width: 100vw;
-  padding-top: 30vh;
-  padding-bottom: 8rem;
+  /* padding-top: 30vh;
+  padding-bottom: 8rem; */
   min-height: 100vh;
   background: no-repeat center url("/headerBg.png") var(--bg-Color);
   background-size: 690px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .headerSectionBox {
   width: 90vw;
@@ -63,8 +66,6 @@
 @media (max-width: 650px) {
   .headerSection {
     width: 100vw;
-    padding-top: 20vh;
-    padding-bottom: 8rem;
     background-size: 95vw;
   }
   .headerSectionBox h1 {

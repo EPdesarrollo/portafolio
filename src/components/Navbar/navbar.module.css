@@ -58,6 +58,7 @@
 @media (max-width: 600px) {
   .navbarMain {
     height: 60px;
+    padding: 0.65rem;
   }
   .navbarBoxLayout {
     display: none;

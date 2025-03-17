@@ -3,6 +3,8 @@ import Link from "next/link";
 // fonts
 import { aldrich } from "@/fonts/fonts";
 import { firaCode } from "@/fonts/fonts";
+// components
+import NavBarSmallScreen from "./NavBarSmallScreen";
 
 export function Navbar() {
   return (
@@ -17,6 +19,9 @@ export function Navbar() {
         <Link href="#contact">
           goTo(<span className={aldrich.className}>CONTACTO</span>)
         </Link>
+      </div>
+      <div className={styles.navbarSmallScreen}>
+        <NavBarSmallScreen aldrich={aldrich} />
       </div>
     </section>
   );

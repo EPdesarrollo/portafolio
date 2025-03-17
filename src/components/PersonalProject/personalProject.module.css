@@ -102,3 +102,9 @@
 .btnNext img {
   width: 30px;
 }
+
+@media (max-width: 600px) {
+  .personalProjectSection {
+    display: none;
+  }
+}

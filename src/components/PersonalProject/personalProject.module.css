@@ -1,4 +1,5 @@
 .personalProjectSection {
+  position: relative;
   padding: 6rem 0rem 8rem 0rem;
   overflow-x: hidden;
 }
@@ -16,7 +17,7 @@
   align-items: flex-end;
 }
 
-.personalProjectSectionFirts,
+/* .personalProjectSectionFirts,
 .personalProjectSectionLast {
   position: relative;
   top: -20px;
@@ -28,7 +29,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-}
+} */
 .layer {
   width: 100%;
   height: 100%;
@@ -42,36 +43,41 @@
   padding: 0.5rem;
   flex: 1 1 calc(50% - 2rem);
   background: var(--boxColor);
+  background: rgb(51, 60, 70);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 5px var(--boxColor);
+  box-shadow: 2px 2px 2px #61c3d737;
+  transition: var(--transition);
+  cursor: pointer;
 }
-.profesionalProjectIndividual img,
+.personalProjectSectionMedium p {
+  color: rgb(226, 226, 226);
+  font-size: 0.95rem;
+}
 .profesionalProjectIndividualActive img {
   width: 100%;
-  height: 80%;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px;
 }
-.profesionalProjectIndividualInactive img,
-.profesionalProjectIndividualActiveInactive img {
+/*  .profesionalProjectIndividualInactive img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   border-radius: 10px;
-}
+} */
 
 .profesionalProjectIndividualSkills {
   margin-top: 1rem;
   display: flex;
   gap: 1rem;
 }
-.profesionalProjectIndividualSkillsInactive {
+/* .profesionalProjectIndividualSkillsInactive {
   margin-top: 1rem;
   display: flex;
   gap: 1rem;
-}
+} */
 .profesionalProjectIndividualSkills p {
   padding: 0.2rem 0.1rem;
   width: 100px;
@@ -81,7 +87,7 @@
   font-size: 0.9rem;
   border-radius: 5px;
 }
-.profesionalProjectIndividualSkillsInactive p {
+/* .profesionalProjectIndividualSkillsInactive p {
   padding: 0.1rem 0.1rem;
   width: 70px;
   background: var(--boxColor);
@@ -89,23 +95,43 @@
   text-align: center;
   font-size: 0.65rem;
   border-radius: 5px;
-}
-.btnPrev,
-.btnNext {
-  align-self: center;
-  position: relative;
-  top: 70px;
-}
+} */
+
 .btnPrev {
   transform: rotate(180deg);
+  position: absolute;
+  top: 60%;
+  left: 5rem;
+}
+.btnNext {
+  position: absolute;
+  top: 60%;
+  right: 5rem;
 }
 .btnPrev img,
 .btnNext img {
   width: 30px;
 }
 
+.personalProjectSectionFirts {
+  transition: var(--transition);
+}
+.personalProjectSectionLast {
+  transition: var(--transition);
+}
+
+.personalProjectSectionMedium:hover {
+  /* box-shadow: 1px 1px 10px var(--boxColor);
+  transform: scale(1.01); */
+  box-shadow: 0px 0px 0px rgba(255, 215, 38, 0.353);
+  transform: translate(2px, 2px);
+}
+
 @media (max-width: 600px) {
   .personalProjectSection {
     /* display: none; */
+  }
+  .personalProjectSectionBox {
+    margin-top: 2rem;
   }
 }

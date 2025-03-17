@@ -119,7 +119,7 @@ export function PersonalProject() {
             </div>
           </div>
         </div> */}
-        {data.map((project) => {
+        {/* {data.map((project) => {
           return (
             <div className={styles.personalProjectSectionMedium}>
               <div className={styles.profesionalProjectIndividualActive}>
@@ -135,7 +135,7 @@ export function PersonalProject() {
               </div>
             </div>
           );
-        })}
+        })} */}
       </div>
       {count !== numElements - 1 ? (
         <button onClick={handleCountNext} className={styles.btnNext}>

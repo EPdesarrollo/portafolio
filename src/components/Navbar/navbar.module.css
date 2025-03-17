@@ -26,15 +26,13 @@
 
 /* small screen */
 .navbarSmallScreen {
-  width: 100vw;
+  width: 90vw;
+  margin: 0 auto;
   display: none;
 }
 .navbarSmallScreen img {
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  transform: translate(-50%, -50%);
-  width: 50px;
+  width: 40px;
+  transition: var(--transition);
 }
 .navbarSmallScreenLinksBox {
   width: 100vw;
@@ -42,7 +40,7 @@
   flex-direction: column;
   background: #254b52;
   position: fixed;
-  top: 69px;
+  top: 59px;
   left: 0;
   transition: var(--transition);
 }
@@ -59,12 +57,13 @@
 
 @media (max-width: 600px) {
   .navbarMain {
-    height: 70px;
+    height: 60px;
   }
   .navbarBoxLayout {
     display: none;
   }
   .navbarSmallScreen {
-    display: inherit;
+    display: flex;
+    justify-content: flex-end;
   }
 }

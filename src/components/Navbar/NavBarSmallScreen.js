@@ -9,11 +9,15 @@ export function NavBarSmallScreen({ aldrich }) {
     showLinks ? setShowLinks(false) : setShowLinks(true);
   }
   const styleLinkBox = showLinks ? "0" : "-100";
+  const styleBar = showLinks ? "90" : "0";
   return (
     <>
       <div className={styles.navbarSmallScreen}>
         <button onClick={handleShowLinks}>
-          <img src="logoDB.png" />
+          <img
+            style={{ transform: `rotatez(${styleBar}deg)` }}
+            src="bars.png"
+          />
         </button>
       </div>
 
@@ -21,13 +25,13 @@ export function NavBarSmallScreen({ aldrich }) {
         style={{ transform: `translateX(${styleLinkBox}%)` }}
         className={styles.navbarSmallScreenLinksBox}
       >
-        <Link href="#home">
+        <Link href="#home" onClick={() => setShowLinks(false)}>
           goTo(<span className={aldrich.className}>HOME</span>)
         </Link>
-        <Link href="#projects">
+        <Link onClick={() => setShowLinks(false)} href="#projects">
           goTo(<span className={aldrich.className}>PORTAFOLIO</span>)
         </Link>
-        <Link href="#contact">
+        <Link onClick={() => setShowLinks(false)} href="#contact">
           goTo(<span className={aldrich.className}>CONTACTO</span>)
         </Link>
       </div>

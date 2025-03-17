@@ -18,8 +18,8 @@
   .SocialMain {
     padding: 0.25rem 0.5rem;
     top: inherit;
-    bottom: 1rem;
-    left: 2rem;
+    bottom: 0.6rem;
+    left: 0.6rem;
     flex-direction: row;
   }
   .SocialMain img {

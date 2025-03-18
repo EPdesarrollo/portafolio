@@ -27,38 +27,46 @@ export function PersonalProject() {
   return (
     <section className={styles.personalProjectSection}>
       <h2>Personal Projects</h2>
-      <div className={styles.personalProjectBox}>
-        {/* 1 */}
-        <div className={styles.personalProjectIndividualInactive}>
-          <div className={styles.layer}></div>
-          <img src="petCode.webp" />
-          <div className={styles.personalProjectIndividualInactiveSkills}>
-            <p>Lorem</p>
-            <p>Lorem</p>
+      <div className={styles.personalProjectSectionBox}>
+        <div className={styles.personalProjectBox}>
+          {/* 1 */}
+          <div className={styles.personalProjectIndividualInactive}>
+            <div className={styles.layer}></div>
+            <img src="petCode.webp" />
+            <div className={styles.personalProjectIndividualInactiveSkills}>
+              <p>Lorem</p>
+              <p>Lorem</p>
+            </div>
+          </div>
+          {/* 2 */}
+          <div className={styles.personalProjectIndividualActive}>
+            <img src="petCode.webp" />
+            <p className={styles.personalProjectIndividualText}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi.
+              Fusce dignissim sem vel ultricies feugiat.
+            </p>
+            <div className={styles.personalProjectIndividualActiveSkills}>
+              <p>Lorem</p>
+              <p>Lorem</p>
+            </div>
+          </div>
+          {/* 3 */}
+          <div className={styles.personalProjectIndividualInactive}>
+            <div className={styles.layer}></div>
+            <img src="petCode.webp" />
+            <div className={styles.personalProjectIndividualInactiveSkills}>
+              <p>Lorem</p>
+              <p>Lorem</p>
+            </div>
           </div>
         </div>
-        {/* 2 */}
-        <div className={styles.personalProjectIndividualActive}>
-          <img src="petCode.webp" />
-          <p className={styles.personalProjectIndividualText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi.
-            Fusce dignissim sem vel ultricies feugiat.
-          </p>
-          <div className={styles.personalProjectIndividualActiveSkills}>
-            <p>Lorem</p>
-            <p>Lorem</p>
-          </div>
-        </div>
-        {/* 3 */}
-        <div className={styles.personalProjectIndividualInactive}>
-          <div className={styles.layer}></div>
-          <img src="petCode.webp" />
-          <div className={styles.personalProjectIndividualInactiveSkills}>
-            <p>Lorem</p>
-            <p>Lorem</p>
-          </div>
-        </div>
+        <button className={styles.btnPrev}>
+          <img src="/arrow.png" />
+        </button>
+        <button className={styles.btnNext}>
+          <img src="/arrow.png" />
+        </button>
       </div>
     </section>
   );

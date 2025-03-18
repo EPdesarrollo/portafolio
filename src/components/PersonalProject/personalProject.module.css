@@ -5,6 +5,12 @@
 .personalProjectSection h2 {
   text-align: center;
 }
+.personalProjectSectionBox {
+  position: relative;
+  width: 90vw;
+  max-width: var(--max-Width);
+  margin: 0 auto;
+}
 .personalProjectBox {
   margin: 0 auto;
   margin-top: 3rem;
@@ -19,7 +25,7 @@
 .personalProjectIndividualActive {
   width: calc(33.3% - 2rem);
   background: var(--boxColor);
-  padding: 1rem;
+  padding: 0.75rem;
   border-radius: 10px;
 }
 .personalProjectIndividualActive img {
@@ -53,7 +59,7 @@
   align-self: flex-end;
   height: 50%;
   background: var(--boxColor);
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 10px;
 }
 .layer {
@@ -84,4 +90,23 @@
   text-align: center;
   font-size: 0.9rem;
   border-radius: 5px;
+}
+
+/* btns */
+.btnPrev {
+  position: absolute;
+  top: 50%;
+  left: -1rem;
+}
+.btnNext {
+  position: absolute;
+  top: 50%;
+  right: -1rem;
+}
+.btnNext img {
+  width: 30px;
+}
+.btnPrev img {
+  width: 30px;
+  transform: rotate(180deg);
 }

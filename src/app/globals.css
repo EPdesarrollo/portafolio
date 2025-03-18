@@ -6,8 +6,8 @@
 }
 :root {
   --yellow-Color: rgb(255, 215, 38);
-  --bg-Color: rgb(42, 46, 54);
-  --bgSecondary-Color: #37404c;
+  --bg-Color: rgb(35, 38, 44);
+  --bgSecondary-Color: #313943;
   --boxColor: #61c3d760;
   --max-Width: 1200px;
   --transition: all 0.2s linear;

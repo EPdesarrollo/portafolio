@@ -3,7 +3,7 @@
   width: 100vw;
   background: var(--bgSecondary-Color);
 
-  box-shadow: 1px 1px 40px var(--boxColor);
+  box-shadow: 1px 1px 30px var(--boxColor);
 }
 
 .profesionalProjectSection h2 {

@@ -4,19 +4,19 @@ import { useState } from "react";
 
 const data = [
   {
-    id: 1,
+    id: 0,
     image: "taquina.webp",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi. Fusce dignissim sem vel ultricies feugiat.",
     tecnologies: ["lorem", "ipsum"],
   },
   {
-    id: 2,
+    id: 1,
     image: "petcode.webp",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi. Fusce dignissim sem vel ultricies feugiat.",
     tecnologies: ["lorem", "ipsum"],
   },
   {
-    id: 3,
+    id: 2,
     image: "lebleu.webp",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi. Fusce dignissim sem vel ultricies feugiat.",
     tecnologies: ["lorem", "ipsum"],
@@ -24,42 +24,43 @@ const data = [
 ];
 
 export function PersonalProject() {
+  const [count, setCount] = useState(1);
   return (
     <section className={styles.personalProjectSection}>
       <h2>Personal Projects</h2>
       <div className={styles.personalProjectSectionBox}>
         <div className={styles.personalProjectBox}>
           {/* 1 */}
-          <div className={styles.personalProjectIndividualInactive}>
-            <div className={styles.layer}></div>
-            <img src="petCode.webp" />
-            <div className={styles.personalProjectIndividualInactiveSkills}>
-              <p>Lorem</p>
-              <p>Lorem</p>
-            </div>
-          </div>
-          {/* 2 */}
-          <div className={styles.personalProjectIndividualActive}>
-            <img src="petCode.webp" />
-            <p className={styles.personalProjectIndividualText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi.
-              Fusce dignissim sem vel ultricies feugiat.
-            </p>
-            <div className={styles.personalProjectIndividualActiveSkills}>
-              <p>Lorem</p>
-              <p>Lorem</p>
-            </div>
-          </div>
-          {/* 3 */}
-          <div className={styles.personalProjectIndividualInactive}>
-            <div className={styles.layer}></div>
-            <img src="petCode.webp" />
-            <div className={styles.personalProjectIndividualInactiveSkills}>
-              <p>Lorem</p>
-              <p>Lorem</p>
-            </div>
-          </div>
+          {data.map((project) => {
+            if (count === project.id) {
+              return (
+                <div className={styles.personalProjectIndividualActive}>
+                  <img src={data[count].image} />
+                  <p className={styles.personalProjectIndividualText}>
+                    {data[count].text}
+                  </p>
+                  <div className={styles.personalProjectIndividualActiveSkills}>
+                    {data[count].tecnologies.map((t) => {
+                      return <p>{t}</p>;
+                    })}
+                  </div>
+                </div>
+              );
+            } else {
+              return (
+                <div className={styles.personalProjectIndividualInactive}>
+                  <div className={styles.layer}></div>
+                  <img src="petCode.webp" />
+                  <div
+                    className={styles.personalProjectIndividualInactiveSkills}
+                  >
+                    <p>Lorem</p>
+                    <p>Lorem</p>
+                  </div>
+                </div>
+              );
+            }
+          })}
         </div>
         <button className={styles.btnPrev}>
           <img src="/arrow.png" />

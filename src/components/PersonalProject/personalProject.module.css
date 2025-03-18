@@ -70,6 +70,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.423);
   border-radius: 10px;
+  backdrop-filter: blur(1px);
 }
 .personalProjectIndividualInactive img {
   width: 100%;

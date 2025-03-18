@@ -75,7 +75,7 @@ export default function Home() {
       {/* profesional project */}
 
       {/* personal project */}
-      {/* <PersonalProject /> */}
+      <PersonalProject />
       {/* personal project */}
 
       {/* contact */}

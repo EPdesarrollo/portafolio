@@ -1,84 +1,42 @@
 .personalProjectSection {
-  position: relative;
   padding: 6rem 0rem 8rem 0rem;
-  overflow-x: hidden;
+  width: 100vw;
 }
 .personalProjectSection h2 {
   text-align: center;
 }
-.personalProjectSectionBox {
-  width: 90vw;
-  max-width: var(--max-Width);
+.personalProjectBox {
   margin: 0 auto;
   margin-top: 3rem;
+  width: 90vw;
+  max-width: var(--max-Width);
   display: flex;
   justify-content: center;
-  column-gap: 2rem;
-  align-items: flex-end;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
-
-/* .personalProjectSectionFirts,
-.personalProjectSectionLast {
-  position: relative;
-  top: -20px;
-  padding: 0.5rem;
-  height: 250px;
-  flex: 1 1 calc(30% - 2rem);
+/* active */
+.personalProjectIndividualActive {
+  width: calc(33.3% - 2rem);
   background: var(--boxColor);
+  padding: 1rem;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-} */
-.layer {
+}
+.personalProjectIndividualActive img {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(31, 31, 31, 0.57);
-  border-radius: 10px;
-}
-.personalProjectSectionMedium {
-  padding: 0.5rem;
-  flex: 1 1 calc(50% - 2rem);
-  background: var(--boxColor);
-  background: rgb(51, 60, 70);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 2px 2px 2px #61c3d737;
-  transition: var(--transition);
-  cursor: pointer;
-}
-.personalProjectSectionMedium p {
-  color: rgb(226, 226, 226);
-  font-size: 0.95rem;
-}
-.profesionalProjectIndividualActive img {
-  width: 100%;
-  height: 250px;
+  /* height: 80%; */
   object-fit: cover;
   border-radius: 10px;
 }
-/*  .profesionalProjectIndividualInactive img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-} */
-
-.profesionalProjectIndividualSkills {
+.personalProjectIndividualActiveText {
+  margin-top: 1rem;
+}
+.personalProjectIndividualActiveSkills {
   margin-top: 1rem;
   display: flex;
   gap: 1rem;
 }
-/* .profesionalProjectIndividualSkillsInactive {
-  margin-top: 1rem;
-  display: flex;
-  gap: 1rem;
-} */
-.profesionalProjectIndividualSkills p {
+.personalProjectIndividualActiveSkills p {
   padding: 0.2rem 0.1rem;
   width: 100px;
   background: var(--boxColor);
@@ -87,51 +45,43 @@
   font-size: 0.9rem;
   border-radius: 5px;
 }
-/* .profesionalProjectIndividualSkillsInactive p {
-  padding: 0.1rem 0.1rem;
-  width: 70px;
+/* inactive */
+.personalProjectIndividualInactive {
+  position: relative;
+  top: -15px;
+  width: calc(28% - 2rem);
+  align-self: flex-end;
+  height: 50%;
+  background: var(--boxColor);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.423);
+  border-radius: 10px;
+}
+.personalProjectIndividualInactive img {
+  width: 100%;
+  /* height: 80%; */
+  object-fit: cover;
+  border-radius: 10px;
+}
+.personalProjectIndividualInactiveSkills {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.personalProjectIndividualInactiveSkills p {
+  padding: 0.2rem 0.1rem;
+  width: 100px;
   background: var(--boxColor);
   background: rgb(36, 51, 65);
   text-align: center;
-  font-size: 0.65rem;
+  font-size: 0.9rem;
   border-radius: 5px;
-} */
-
-.btnPrev {
-  transform: rotate(180deg);
-  position: absolute;
-  top: 60%;
-  left: 5rem;
-}
-.btnNext {
-  position: absolute;
-  top: 60%;
-  right: 5rem;
-}
-.btnPrev img,
-.btnNext img {
-  width: 30px;
-}
-
-.personalProjectSectionFirts {
-  transition: var(--transition);
-}
-.personalProjectSectionLast {
-  transition: var(--transition);
-}
-
-.personalProjectSectionMedium:hover {
-  /* box-shadow: 1px 1px 10px var(--boxColor);
-  transform: scale(1.01); */
-  box-shadow: 0px 0px 0px rgba(255, 215, 38, 0.353);
-  transform: translate(2px, 2px);
-}
-
-@media (max-width: 600px) {
-  .personalProjectSection {
-    /* display: none; */
-  }
-  .personalProjectSectionBox {
-    margin-top: 2rem;
-  }
 }

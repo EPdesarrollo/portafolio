@@ -1,8 +1,8 @@
 .contactSection {
   padding: 6rem 0rem 8rem 0rem;
   width: 100vw;
-  /* background: var(--bgSecondary-Color); */
-  /* box-shadow: 1px 1px 40px var(--boxColor); */
+  background: var(--bgSecondary-Color);
+  box-shadow: 1px 1px 40px var(--boxColor);
 }
 .contactSection h2 {
   text-align: center;

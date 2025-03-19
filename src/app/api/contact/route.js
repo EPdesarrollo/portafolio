@@ -85,7 +85,7 @@ export async function POST(req) {
       `https://api.hcaptcha.com/siteverify?secret=${HCAPTCHA_SECRET}&response=${token}`
     );
     const data = await response.json();
-    // console.log(data);
+
     if (!data.success) {
       return Response.json({
         status: 400,
@@ -108,7 +108,7 @@ export async function POST(req) {
     //
     const options = {
       from: "exploredeveloper123@gmail.com",
-      to: "exploredeveloper123@gmail.com",
+      to: "epdesarrollofullstack@gmail.com",
       subject: "MENSAJE DESDE EL PORTAFOLIO",
       html: `
           <h2>Mail desde el portafolio epapell.dev</h2>

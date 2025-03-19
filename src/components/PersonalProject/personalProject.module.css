@@ -160,6 +160,16 @@
   .personalProjectBox {
     row-gap: 1rem;
   }
+  .personalProjectIndividualActive {
+    width: 100%;
+  }
+  .personalProjectIndividualInactive {
+    width: 100%;
+  }
+  .personalProjectIndividualActive {
+    margin-bottom: 1.5rem;
+  }
+  /* COOMING SOON */
   .personalProjectIndividualInactiveCoomingSoon {
     width: 80vw;
     padding: 2rem 1rem 1rem 1rem;

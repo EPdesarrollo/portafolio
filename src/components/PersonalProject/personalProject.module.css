@@ -157,17 +157,23 @@
 }
 
 @media (max-width: 600px) {
+  .personalProjectSection h2 {
+    font-size: 2rem;
+  }
   .personalProjectBox {
+    margin-top: 2rem;
     row-gap: 1rem;
   }
   .personalProjectIndividualActive {
     width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1.25rem;
   }
   .personalProjectIndividualInactive {
     width: 100%;
   }
-  .personalProjectIndividualActive {
-    margin-bottom: 1.5rem;
+  .commingSoon {
+    margin-top: 0rem;
   }
   /* COOMING SOON */
   .personalProjectIndividualInactiveCoomingSoon {

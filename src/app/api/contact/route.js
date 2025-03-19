@@ -108,7 +108,7 @@ export async function POST(req) {
     //
     const options = {
       from: "exploredeveloper123@gmail.com",
-      to: "epdesarrollofullstack@gmail.com",
+      to: "ericpapell123@gmail.com",
       subject: "MENSAJE DESDE EL PORTAFOLIO",
       html: `
           <h2>Mail desde el portafolio epapell.dev</h2>

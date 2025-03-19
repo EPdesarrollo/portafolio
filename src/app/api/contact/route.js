@@ -126,7 +126,6 @@ export async function POST(req) {
       message: "Message sent",
     });
   } catch (err) {
-    console.log(err);
     return Response.json({
       status: 400,
       message:

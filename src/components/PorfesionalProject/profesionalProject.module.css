@@ -29,6 +29,9 @@
   box-shadow: 1px 1px 5px var(--boxColor);
   overflow-x: hidden;
 }
+.profesionalProjectIndividual:hover {
+  transform: scale(1);
+}
 .imageContainer {
   width: 100%;
   height: 100%;
@@ -53,7 +56,8 @@
 .profesionalProjectIndividualSkills {
   margin-top: 1rem;
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 .profesionalProjectIndividualSkills p {
   padding: 0.2rem 0.1rem;
@@ -62,7 +66,7 @@
   background: rgb(36, 51, 65);
 
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   border-radius: 5px;
 }
 
@@ -72,5 +76,8 @@
   }
   .profesionalProjectBox {
     margin-top: 2rem;
+  }
+  .profesionalProjectIndividual {
+    flex: 1 1 calc(90vw);
   }
 }

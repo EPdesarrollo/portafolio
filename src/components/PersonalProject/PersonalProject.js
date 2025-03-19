@@ -22,6 +22,12 @@ const data = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi. ",
     tecnologies: ["lorem", "ipsum"],
   },
+  {
+    id: 3,
+    image: "lebleu.webp",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi. ",
+    tecnologies: ["lorem", "ipsum"],
+  },
   // {
   //   id: 3,
   //   image: "lebleu.webp",
@@ -71,18 +77,12 @@ export function PersonalProject() {
               return (
                 <div
                   key={project.id}
-                  className={styles.personalProjectIndividualActive}
+                  className={styles.personalProjectIndividualActiveCoomingSoon}
                 >
-                  <img src={project.image} />
-                  <p
-                    className={`${firaCode.className} ${styles.personalProjectIndividualText}`}
-                  >
-                    {data[count].text}
-                  </p>
-                  <div className={styles.personalProjectIndividualActiveSkills}>
-                    {data[count].tecnologies.map((t, i) => {
-                      return <p key={i}>{t}</p>;
-                    })}
+                  <p className={styles.question}>?</p>
+
+                  <div className={styles.commingSoon}>
+                    <p>Cooming soon...</p>
                   </div>
                 </div>
               );
@@ -93,23 +93,21 @@ export function PersonalProject() {
                   onClick={() => {
                     handleDirectCount(project.id);
                   }}
-                  className={styles.personalProjectIndividualInactive}
+                  className={
+                    styles.personalProjectIndividualInactiveCoomingSoon
+                  }
                 >
                   <div className={styles.layer}></div>
-                  <img src={project.image} />
-                  <div
-                    className={styles.personalProjectIndividualInactiveSkills}
-                  >
-                    {data[count].tecnologies.map((t, i) => {
-                      return <p key={i}>{t}</p>;
-                    })}
+                  <p className={styles.question}>?</p>
+                  <div className={styles.commingSoon}>
+                    <p>Cooming soon...</p>
                   </div>
                 </div>
               );
             }
           })}
         </div>
-        {count !== 0 && (
+        {/* {count !== 0 && (
           <button onClick={handleCountPrev} className={styles.btnPrev}>
             <img src="/arrow.png" />
           </button>
@@ -118,9 +116,69 @@ export function PersonalProject() {
           <button onClick={handleCountNext} className={styles.btnNext}>
             <img src="/arrow.png" />
           </button>
-        )}
+        )} */}
       </div>
     </section>
+    // <section className={styles.personalProjectSection}>
+    //   <h2>Personal Projects</h2>
+    //   <div className={styles.personalProjectSectionBox}>
+    //     <div className={styles.personalProjectBox}>
+    //       {/* 1 */}
+    //       {data.map((project) => {
+    //         if (count === project.id) {
+    //           return (
+    //             <div
+    //               key={project.id}
+    //               className={styles.personalProjectIndividualActive}
+    //             >
+    //               <img src={project.image} />
+    //               <p
+    //                 className={`${firaCode.className} ${styles.personalProjectIndividualText}`}
+    //               >
+    //                 {data[count].text}
+    //               </p>
+    //               <div className={styles.personalProjectIndividualActiveSkills}>
+    //                 {data[count].tecnologies.map((t, i) => {
+    //                   return <p key={i}>{t}</p>;
+    //                 })}
+    //               </div>
+    //             </div>
+    //           );
+    //         } else {
+    //           return (
+    //             <div
+    //               key={project.id}
+    //               onClick={() => {
+    //                 handleDirectCount(project.id);
+    //               }}
+    //               className={styles.personalProjectIndividualInactive}
+    //             >
+    //               <div className={styles.layer}></div>
+    //               <img src={project.image} />
+    //               <div
+    //                 className={styles.personalProjectIndividualInactiveSkills}
+    //               >
+    //                 {data[count].tecnologies.map((t, i) => {
+    //                   return <p key={i}>{t}</p>;
+    //                 })}
+    //               </div>
+    //             </div>
+    //           );
+    //         }
+    //       })}
+    //     </div>
+    //     {count !== 0 && (
+    //       <button onClick={handleCountPrev} className={styles.btnPrev}>
+    //         <img src="/arrow.png" />
+    //       </button>
+    //     )}
+    //     {count !== data.length - 1 && (
+    //       <button onClick={handleCountNext} className={styles.btnNext}>
+    //         <img src="/arrow.png" />
+    //       </button>
+    //     )}
+    //   </div>
+    // </section>
   );
 }
 

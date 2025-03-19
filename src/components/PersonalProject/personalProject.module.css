@@ -111,3 +111,61 @@
   width: 30px;
   transform: rotate(180deg);
 }
+
+/* coming soon */
+.personalProjectIndividualInactiveCoomingSoon {
+  position: relative;
+  top: -15px;
+  width: 220px;
+  align-self: flex-end;
+  height: 50%;
+  background: var(--boxColor);
+  padding: 3rem 1rem 1.5rem 1rem;
+  border-radius: 10px;
+}
+.personalProjectIndividualActiveCoomingSoon {
+  position: relative;
+  top: -15px;
+  align-self: flex-end;
+  width: 270px;
+
+  height: 50%;
+  background: var(--boxColor);
+  padding: 4rem 2rem 2rem 2rem;
+  border-radius: 10px;
+}
+.commingSoon {
+  margin-top: 1rem;
+}
+.commingSoon p {
+  padding: 0.3rem 0.1rem;
+
+  background: var(--boxColor);
+  background: rgb(36, 51, 65);
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.question {
+  text-align: center;
+  font-size: 4rem;
+}
+
+@media (max-width: 600px) {
+  .personalProjectBox {
+    row-gap: 1rem;
+  }
+  .personalProjectIndividualInactiveCoomingSoon {
+    width: 80vw;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .personalProjectIndividualActiveCoomingSoon {
+    width: 90vw;
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 10px;
+  }
+  .question {
+    font-size: 3rem;
+  }
+}

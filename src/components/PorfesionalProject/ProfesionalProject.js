@@ -6,7 +6,7 @@ const data = [
     id: 0,
     image: "petCode.webp",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi.Fusce dignissim sem vel ultricies feugiat.",
-    tecnologies: ["javascript", "react", "node", "nosql"],
+    tecnologies: ["javascript", "react", "node"],
     link: "https://petcode.guide/",
   },
   {

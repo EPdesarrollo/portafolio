@@ -6,28 +6,23 @@ import { firaCode } from "@/fonts/fonts";
 const data = [
   {
     id: 0,
-    image: "taquina.webp",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi. ",
+    image: "personalProjectMarketPL.webp",
+    text: "Marketplace cooming soon...",
     tecnologies: ["lorem", "ipsum"],
   },
   {
     id: 1,
-    image: "petcode.webp",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi. ",
+    image: "personalProjectNasa.webp",
+    text: "NASA Search App cooming soon...",
     tecnologies: ["lorem", "ipsum"],
   },
   {
     id: 2,
-    image: "lebleu.webp",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi. ",
+    image: "personalProjectFaceReco.webp",
+    text: "Face Recognition App cooming soon...",
     tecnologies: ["lorem", "ipsum"],
   },
-  {
-    id: 3,
-    image: "lebleu.webp",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero tortor, imperdiet nec ullamcorper ac, tincidunt id nisi. ",
-    tecnologies: ["lorem", "ipsum"],
-  },
+
   // {
   //   id: 3,
   //   image: "lebleu.webp",
@@ -67,6 +62,57 @@ export function PersonalProject() {
     setCount(id);
   }
   return (
+    // <section className={styles.personalProjectSection}>
+    //   <h2>Personal Projects</h2>
+    //   <div className={styles.personalProjectSectionBox}>
+    //     <div className={styles.personalProjectBox}>
+    //       {/* 1 */}
+    //       {data.map((project) => {
+    //         if (count === project.id) {
+    //           return (
+    //             <div
+    //               key={project.id}
+    //               className={styles.personalProjectIndividualActiveCoomingSoon}
+    //             >
+    //               <img src={project.image} />
+    //               <div className={styles.commingSoon}>
+    //                 <p>Cooming soon...</p>
+    //               </div>
+    //             </div>
+    //           );
+    //         } else {
+    //           return (
+    //             <div
+    //               key={project.id}
+    //               onClick={() => {
+    //                 handleDirectCount(project.id);
+    //               }}
+    //               className={
+    //                 styles.personalProjectIndividualInactiveCoomingSoon
+    //               }
+    //             >
+    //               <div className={styles.layer}></div>
+    //               <img src={project.image} />{" "}
+    //               <div className={styles.commingSoon}>
+    //                 <p>Cooming soon...</p>
+    //               </div>
+    //             </div>
+    //           );
+    //         }
+    //       })}
+    //     </div>
+    //     {/* {count !== 0 && (
+    //       <button onClick={handleCountPrev} className={styles.btnPrev}>
+    //         <img src="/arrow.png" />
+    //       </button>
+    //     )}
+    //     {count !== data.length - 1 && (
+    //       <button onClick={handleCountNext} className={styles.btnNext}>
+    //         <img src="/arrow.png" />
+    //       </button>
+    //     )} */}
+    //   </div>
+    // </section>
     <section className={styles.personalProjectSection}>
       <h2>Personal Projects</h2>
       <div className={styles.personalProjectSectionBox}>
@@ -77,12 +123,21 @@ export function PersonalProject() {
               return (
                 <div
                   key={project.id}
-                  className={styles.personalProjectIndividualActiveCoomingSoon}
+                  className={styles.personalProjectIndividualActive}
                 >
-                  <p className={styles.question}>?</p>
-
-                  <div className={styles.commingSoon}>
-                    <p>Cooming soon...</p>
+                  <img src={project.image} />
+                  <p
+                    className={`${firaCode.className} ${styles.personalProjectIndividualText}`}
+                  >
+                    {/* {data[count].text} */}
+                  </p>
+                  <div className={styles.personalProjectIndividualActiveSkills}>
+                    {/* {data[count].tecnologies.map((t, i) => {
+                      return <p key={i}>{t}</p>;
+                    })} */}
+                    <div className={styles.commingSoon}>
+                      <p>{project.text}</p>
+                    </div>
                   </div>
                 </div>
               );
@@ -93,14 +148,19 @@ export function PersonalProject() {
                   onClick={() => {
                     handleDirectCount(project.id);
                   }}
-                  className={
-                    styles.personalProjectIndividualInactiveCoomingSoon
-                  }
+                  className={styles.personalProjectIndividualInactive}
                 >
                   <div className={styles.layer}></div>
-                  <p className={styles.question}>?</p>
-                  <div className={styles.commingSoon}>
-                    <p>Cooming soon...</p>
+                  <img src={project.image} />
+                  <div
+                    className={styles.personalProjectIndividualInactiveSkills}
+                  >
+                    {/* {data[count].tecnologies.map((t, i) => {
+                      return <p key={i}>{t}</p>;
+                    })} */}
+                    <div className={styles.commingSoon}>
+                      <p>{project.text}</p>
+                    </div>
                   </div>
                 </div>
               );
@@ -119,66 +179,6 @@ export function PersonalProject() {
         )} */}
       </div>
     </section>
-    // <section className={styles.personalProjectSection}>
-    //   <h2>Personal Projects</h2>
-    //   <div className={styles.personalProjectSectionBox}>
-    //     <div className={styles.personalProjectBox}>
-    //       {/* 1 */}
-    //       {data.map((project) => {
-    //         if (count === project.id) {
-    //           return (
-    //             <div
-    //               key={project.id}
-    //               className={styles.personalProjectIndividualActive}
-    //             >
-    //               <img src={project.image} />
-    //               <p
-    //                 className={`${firaCode.className} ${styles.personalProjectIndividualText}`}
-    //               >
-    //                 {data[count].text}
-    //               </p>
-    //               <div className={styles.personalProjectIndividualActiveSkills}>
-    //                 {data[count].tecnologies.map((t, i) => {
-    //                   return <p key={i}>{t}</p>;
-    //                 })}
-    //               </div>
-    //             </div>
-    //           );
-    //         } else {
-    //           return (
-    //             <div
-    //               key={project.id}
-    //               onClick={() => {
-    //                 handleDirectCount(project.id);
-    //               }}
-    //               className={styles.personalProjectIndividualInactive}
-    //             >
-    //               <div className={styles.layer}></div>
-    //               <img src={project.image} />
-    //               <div
-    //                 className={styles.personalProjectIndividualInactiveSkills}
-    //               >
-    //                 {data[count].tecnologies.map((t, i) => {
-    //                   return <p key={i}>{t}</p>;
-    //                 })}
-    //               </div>
-    //             </div>
-    //           );
-    //         }
-    //       })}
-    //     </div>
-    //     {count !== 0 && (
-    //       <button onClick={handleCountPrev} className={styles.btnPrev}>
-    //         <img src="/arrow.png" />
-    //       </button>
-    //     )}
-    //     {count !== data.length - 1 && (
-    //       <button onClick={handleCountNext} className={styles.btnNext}>
-    //         <img src="/arrow.png" />
-    //       </button>
-    //     )}
-    //   </div>
-    // </section>
   );
 }
 

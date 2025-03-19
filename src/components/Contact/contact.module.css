@@ -98,6 +98,7 @@
   }
   .inputLayout {
     flex-direction: column;
+    align-items: stretch;
   }
   .textareaBox {
     margin-top: 1.5rem;

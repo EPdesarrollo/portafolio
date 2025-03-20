@@ -17,11 +17,11 @@
 }
 .navbarBoxLayout a {
   color: rgb(222, 222, 222);
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 .navbarBoxLayout span {
   color: var(--yellow-Color);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 /* small screen */

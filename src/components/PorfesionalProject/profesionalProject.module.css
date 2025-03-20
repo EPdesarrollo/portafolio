@@ -29,6 +29,7 @@
   box-shadow: 1px 1px 5px var(--boxColor);
   overflow-x: hidden;
 }
+
 .profesionalProjectIndividual:hover {
   transform: scale(1);
 }
@@ -52,6 +53,8 @@
 .profesionalProjectIndividualText {
   margin-top: 1rem;
   text-wrap: balance;
+  font-size: 1.1rem;
+  color: rgb(246, 246, 246);
 }
 .profesionalProjectIndividualSkills {
   margin-top: 1rem;
@@ -64,9 +67,8 @@
   width: 100px;
   background: var(--boxColor);
   background: rgb(36, 51, 65);
-
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   border-radius: 5px;
 }
 

@@ -1,6 +1,6 @@
 "use client";
 import styles from "./contact.module.css";
-import { firaCode } from "@/fonts/fonts";
+import { chakraPetch } from "@/fonts/fonts";
 
 export function NotSucces({ setSucces }) {
   return (
@@ -12,7 +12,7 @@ export function NotSucces({ setSucces }) {
           message.
         </p>
         <button
-          className={firaCode.className}
+          className={chakraPetch.className}
           onClick={() => {
             if (typeof window !== undefined) {
               setSucces("undefined");

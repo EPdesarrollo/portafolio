@@ -1,25 +1,25 @@
 "use client";
 import styles from "./personalProject.module.css";
 import { useState } from "react";
-import { firaCode } from "@/fonts/fonts";
+import { chakraPetch } from "@/fonts/fonts";
 
 const data = [
   {
     id: 0,
     image: "personalProjectMarketPL.webp",
-    text: "Marketplace cooming soon...",
+    text: "Marketplace",
     tecnologies: ["lorem", "ipsum"],
   },
   {
     id: 1,
     image: "personalProjectNasa.webp",
-    text: "NASA Search App cooming soon...",
+    text: "NASA Search App",
     tecnologies: ["lorem", "ipsum"],
   },
   {
     id: 2,
     image: "personalProjectFaceReco.webp",
-    text: "Face Recognition App cooming soon...",
+    text: "Face Recognition App",
     tecnologies: ["lorem", "ipsum"],
   },
 
@@ -127,16 +127,17 @@ export function PersonalProject() {
                 >
                   <img src={project.image} />
                   <p
-                    className={`${firaCode.className} ${styles.personalProjectIndividualText}`}
+                    className={`${chakraPetch.className} ${styles.personalProjectIndividualText}`}
                   >
                     {/* {data[count].text} */}
                   </p>
+                  <p>{project.text}</p>
                   <div className={styles.personalProjectIndividualActiveSkills}>
                     {/* {data[count].tecnologies.map((t, i) => {
                       return <p key={i}>{t}</p>;
                     })} */}
                     <div className={styles.commingSoon}>
-                      <p>{project.text}</p>
+                      <p className={chakraPetch.className}>Cooming soon...</p>
                     </div>
                   </div>
                 </div>
@@ -152,6 +153,7 @@ export function PersonalProject() {
                 >
                   <div className={styles.layer}></div>
                   <img src={project.image} />
+                  <p>{project.text}</p>
                   <div
                     className={styles.personalProjectIndividualInactiveSkills}
                   >
@@ -159,7 +161,7 @@ export function PersonalProject() {
                       return <p key={i}>{t}</p>;
                     })} */}
                     <div className={styles.commingSoon}>
-                      <p>{project.text}</p>
+                      <p>Cooming soon...</p>
                     </div>
                   </div>
                 </div>

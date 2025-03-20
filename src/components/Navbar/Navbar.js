@@ -2,13 +2,13 @@ import styles from "./navbar.module.css";
 import Link from "next/link";
 // fonts
 import { aldrich } from "@/fonts/fonts";
-import { firaCode } from "@/fonts/fonts";
+import { chakraPetch } from "@/fonts/fonts";
 // components
 import NavBarSmallScreen from "./NavBarSmallScreen";
 
 export function Navbar() {
   return (
-    <section className={`${styles.navbarMain} ${firaCode.className}`}>
+    <section className={`${styles.navbarMain} ${chakraPetch.className}`}>
       <div className={styles.navbarBoxLayout}>
         <Link href="#home">
           goTo(<span className={aldrich.className}>HOME</span>)

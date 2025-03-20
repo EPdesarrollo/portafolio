@@ -1,5 +1,5 @@
 import styles from "@/styles/page.module.css";
-import { firaCode } from "@/fonts/fonts";
+import { chakraPetch } from "@/fonts/fonts";
 // components
 import ProfesionalProject from "@/components/PorfesionalProject/ProfesionalProject";
 import PersonalProject from "@/components/PersonalProject/PersonalProject";
@@ -13,12 +13,13 @@ export default function Home() {
         <div className={styles.headerSectionBox}>
           <h2>ERIC PAPELL</h2>
           <h1>SOFTWARE DEVELOPER</h1>
-          <p className={firaCode.className}>
-            ¡Hola! Soy Eric Papell y soy un apasionado por la programación en
-            constante aprendizaje. A medida que más aprendo más me gusta.
+          <p className={chakraPetch.className}>
+            Hi, I’m Eric Papell a passionate programmer who is always eager to
+            learn more. The more I learn, the more I want to keep learning!
+            Welcome to my resume!
           </p>
         </div>
-        <div className={`${styles.skillsBox} ${firaCode.className}`}>
+        <div className={`${styles.skillsBox} ${chakraPetch.className}`}>
           <div className={styles.skillsBoxIndividual}>
             <img src="/logoJs.png" />
             <div>

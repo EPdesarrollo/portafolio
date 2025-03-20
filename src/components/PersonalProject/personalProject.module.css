@@ -40,6 +40,8 @@
 .personalProjectIndividualActiveSkills {
   margin-top: 1rem;
   display: flex;
+  /* k */
+  justify-content: right;
   gap: 1rem;
 }
 .personalProjectIndividualActiveSkills p {
@@ -81,6 +83,8 @@
 .personalProjectIndividualInactiveSkills {
   margin-top: 1rem;
   display: flex;
+  /* k */
+  justify-content: right;
   gap: 1rem;
 }
 .personalProjectIndividualInactiveSkills p {
@@ -135,10 +139,10 @@
   border-radius: 10px;
 }
 .commingSoon {
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 .commingSoon p {
-  padding: 0.3rem 0.2rem;
+  padding: 0.15rem 0.3rem;
 
   background: var(--boxColor);
   background: rgb(36, 51, 65);

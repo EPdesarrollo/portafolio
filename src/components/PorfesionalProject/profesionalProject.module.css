@@ -12,7 +12,7 @@
 .profesionalProjectBox {
   margin: 0 auto;
   margin-top: 3rem;
-  width: 90vw;
+  width: 80vw;
   max-width: var(--max-Width);
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@
   flex-wrap: wrap;
 }
 .profesionalProjectIndividual {
-  padding: 0.75rem;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
   flex: 1 1 calc(50% - 2rem);
   background: var(--boxColor);
   border-radius: 10px;
@@ -51,19 +51,22 @@
   transform: scale(1.05);
 }
 .profesionalProjectIndividualText {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  padding: 0rem 0.5rem;
   text-wrap: balance;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: rgb(246, 246, 246);
 }
 .profesionalProjectIndividualSkills {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  padding: 0rem 0.5rem;
+
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
 .profesionalProjectIndividualSkills p {
-  padding: 0.2rem 0.1rem;
+  padding: 0.15rem 0.1rem;
   width: 100px;
   background: var(--boxColor);
   background: rgb(36, 51, 65);

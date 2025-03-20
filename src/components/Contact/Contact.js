@@ -116,7 +116,7 @@ export function Contact() {
             className={styles.textarea}
             name="message"
             id="message"
-            rows={10}
+            rows={5}
             onChange={handleMessage}
           />
         </div>

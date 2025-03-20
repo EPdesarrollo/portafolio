@@ -9,7 +9,7 @@
 }
 .form {
   width: 90vw;
-  max-width: var(--max-Width);
+  max-width: 900px;
   margin: 0 auto;
   margin-top: 3rem;
   /* background: var(--boxColor); */
@@ -63,10 +63,10 @@
 .form button {
   display: block;
   margin: 0 auto;
-  margin-top: 2rem;
-  padding: 0.2rem 1.5rem;
+  margin-top: 1rem;
+  padding: 0.3rem 2rem;
   color: white;
-  background: var(--boxColor);
+  background: #5dbdd0b0;
   font-size: 1rem;
   border-radius: 2px;
   border: 1px solid var(--boxColor);

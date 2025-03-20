@@ -31,7 +31,9 @@
   display: none;
 }
 .navbarSmallScreen img {
-  width: 40px;
+  position: relative;
+  top: -4px;
+  width: 35px;
   transition: var(--transition);
 }
 .navbarSmallScreenLinksBox {
@@ -40,7 +42,7 @@
   flex-direction: column;
   background: #254b52;
   position: fixed;
-  top: 59px;
+  top: 50px;
   left: 0;
   transition: var(--transition);
 }
@@ -57,7 +59,7 @@
 
 @media (max-width: 600px) {
   .navbarMain {
-    height: 60px;
+    height: 50px;
     padding: 0.65rem;
   }
   .navbarBoxLayout {

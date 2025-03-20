@@ -81,6 +81,7 @@
   }
   .profesionalProjectBox {
     margin-top: 2rem;
+    width: 90vw;
   }
   .profesionalProjectIndividual {
     flex: 1 1 calc(90vw);
